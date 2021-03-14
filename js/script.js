@@ -4,23 +4,28 @@
 function isPalindroma(word){
 // console.log(word);
 for (var i = 0; i < word.length; i++) {
-  console.log(i, word[i]);
- 
-
-
+   // console.log(i, word[i]);
 }
 
+var wordReverse = word.split('').reverse().join('');  //invere la strina inserita
+// console.log(wordReverse);
+for (var i = 0; i < wordReverse.length; i++) {
+  // console.log(i, wordReverse[i]);
+}
+ if(word == wordReverse){
+  console.log('La parola', word , 'è palindroma');
+}else {
+  console.log('La parola', word,  'non è palindroma');
+ }
 }
 
 var worD= prompt('Inserisci una parola:')
 isPalindroma(worD);
 
-//OPPURE
-// var worD = isPalindroma(prompt('Inserisci una parola:'));
-
-
-
-
+// //OPPURE
+// // var worD = isPalindroma(prompt('Inserisci una parola:'));
+//
+//
 
 
 
