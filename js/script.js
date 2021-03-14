@@ -6,8 +6,7 @@ function isPalindroma(word){
 for (var i = 0; i < word.length; i++) {
    // console.log(i, word[i]);
 }
-
-var wordReverse = word.split('').reverse().join('');  //invere la strina inserita
+var wordReverse = word.split('').reverse().join('');  //inverte la strina inserita
 // console.log(wordReverse);
 for (var i = 0; i < wordReverse.length; i++) {
   // console.log(i, wordReverse[i]);
