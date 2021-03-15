@@ -23,8 +23,7 @@
 
 // //OPPURE
 // // var worD = isPalindroma(prompt('Inserisci una parola:'));
-//
-//
+
 
 
 
@@ -37,15 +36,14 @@
 // Sommiamo i due numeri e dichiariamo chi ha
 // vinto.
 
-//Function
-//
+Function
 function random(numMax, numMin){
  var rnd = Math.floor(Math.random()* numMax)  + numMin;
  return rnd;
 }
 
 var numRandomici = random(5, 1);
-console.log('Numero randomico',numRandomici);
+// console.log('Numero randomico',numRandomici);
 // var numRandomic= random(7, 9);
 // console.log('Numero randomico',numRandomic);
 
@@ -53,7 +51,10 @@ var sum = 0;
 var utenteNumb = parseInt(prompt('Scegli un numero da 1 a 5:'));
 if(utenteNumb <= 0 || utenteNumb > 5){
   alert('Hai inserito un numero non compreso tra 1 e 5');
-}else {
+  console.log('Gioco terminato');
+}
+
+else {
   var pariDispari = prompt('Cosa scegli Pari o Dispari:')
   // console.log(utenteNumb);
   // console.log(pariDispari);
@@ -68,3 +69,31 @@ if(utenteNumb <= 0 || utenteNumb > 5){
     console.log('Ha vinto il computer');
   }
 }
+
+
+
+
+
+
+// Esercizio del prof
+// function isPalindrom(word) {
+//     var lng = word.length;
+//     var palLng = Math.floor(lng / 2);
+//     for (var i=0;i<palLng;i++) {
+//         var finalI = lng - i - 1;
+//         var charI = word[i];
+//         var charFinalI = word[finalI];
+//         if (charI != charFinalI) {
+//             return false;
+//         }
+//       }
+//   return true;
+// }
+//
+// // esercizio parola palindroma
+// function es1() {
+//     var word = 'anbna';
+//     var isWordPalindrom = isPalindrom(word);
+//     console.log(word, isWordPalindrom);
+// }
+// es1();
